@@ -1,0 +1,65 @@
+li{
+    font-family: 'Black Ops One', cursive;
+}
+
+h4 {
+    font-family: 'Black Ops One', cursive;
+}
+
+p {
+    font-family: 'Black Ops One', cursive;
+} 
+
+#board {
+    max-width: 210px;
+    max-height: 210px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#gameScoreBoard{
+    max-width: 400px;
+    margin: auto;
+}
+
+#footer{
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+}
+
+#brand{
+    font-family: 'Black Ops One', cursive;
+}
+
+.tdBoard{
+    font-family: 'Black Ops One', cursive;
+    font-size: 40px;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+}
+
+.tdBoard:hover {
+    background-color:orange;
+}
+
+.btn{
+    font-family: 'Black Ops One', cursive;
+}
+
+#screen {
+    background-color: #333;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .15;
+    display: none
+}
+
+#clock {
+    font-size: 15px;
+    display: none;
+}
