@@ -60,6 +60,10 @@ p {
 }
 
 #clock {
-    font-size: 15px;
+    font-size: 20px;
     display: none;
+}
+
+#divClock{
+    height: 25px;
 }

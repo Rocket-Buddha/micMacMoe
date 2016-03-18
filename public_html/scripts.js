@@ -701,9 +701,14 @@ var BoardView = function () {
     };
 
     var sendAction = function (_action) {
-        $("#clock").show();
-        (new MainController()).doHumanTurn(_action);
-        $("#clock").delay(100).fadeOut(600);
+        if (model.getBoardState().getGameState().getStatus() !== GAMESTATETYPE.NOTSTARTED
+                && model.getBoardState().getGameState().getStatus() !== GAMESTATETYPE.WAITNEXTGAME) {
+            if (model.getBoardState().isPlayable(_action.getY(), _action.getX())) {
+                $("#clock").show();
+                (new MainController()).doHumanTurn(_action);
+                $("#clock").delay(100).fadeOut(600);
+            }
+        }
     };
 
     this.refresh = function () {
@@ -778,7 +783,7 @@ var TableScoreBoardView = function () {
     draw();
 };
 
-function Main() {
+var Main = function () {
     
 };
 
